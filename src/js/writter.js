@@ -88,7 +88,8 @@ function processDoc(config){
             toc.push({
                 'file' : fileName,
                 'module' : moduleName,
-                'toc' : parseResult.toc
+                'toc' : parseResult.toc,
+                'title' : parseResult.title
             });
 
             var relativeRoot = path.relative( fileInfo.output.replace(/\/[^\/]+$/, '/'), config.outputDir );
